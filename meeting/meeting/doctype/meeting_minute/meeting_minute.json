@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-09-02 15:01:40.652182",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "discussion",
+  "more_information_section",
+  "action",
+  "status",
+  "assigned_to",
+  "complete_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "discussion",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "discussion",
+   "reqd": 1
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "action"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "status",
+   "options": "open\nclosed"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "assigned to",
+   "options": "User"
+  },
+  {
+   "fieldname": "complete_by",
+   "fieldtype": "Date",
+   "label": "complete by"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "More information"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-09-02 15:43:39.028134",
+ "modified_by": "Administrator",
+ "module": "Meeting",
+ "name": "meeting minute",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
